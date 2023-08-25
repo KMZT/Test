@@ -1,0 +1,24 @@
+
+_G.a = true
+while _G.a and task.wait() do
+for i,v in pairs(game.workspace.LowEnergy:GetDescendants()) do
+if v.Name == 'Part' then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+for i,v in pairs(game.workspace.MediumEnergy:GetDescendants()) do
+if v.Name == 'Part' then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+for i,v in pairs(game.workspace.LargeEnergy:GetDescendants()) do
+if v.Name == 'Part' then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+for i,v in pairs(game.workspace.VeryLargeEnergy:GetDescendants()) do
+if v.Name == 'Part' then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+end
